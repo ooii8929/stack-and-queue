@@ -23,7 +23,7 @@ for(let i = mid+2 ; i <= a.length; i++){
   }
   top--;
 }
-if(top ==0){
+if(top == 0){
   console.log('yes');
 }else{
   console.log('no');
