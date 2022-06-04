@@ -1,20 +1,20 @@
 
-function vaild(s) {
-   let bracket = {
-    "(": ")",
-    "[": "]",
-    "{": "}",
-  };
-let heap = [];
-    for(let i = 0 ; i < s.length ; i++){
-        if(bracket[s[i]]){
-            heap.push(bracket[s[i]]);
-        }else{
-            if(heap.pop() !== s[i]) return false;
-        }
-    }
-    return !heap.length
-}
+// function vaild(s) {
+//    let bracket = {
+//     "(": ")",
+//     "[": "]",
+//     "{": "}",
+//   };
+// let heap = [];
+//     for(let i = 0 ; i < s.length ; i++){
+//         if(bracket[s[i]]){
+//             heap.push(bracket[s[i]]);
+//         }else{
+//             if(heap.pop() !== s[i]) return false;
+//         }
+//     }
+//     return !heap.length
+// }
 
 
 
@@ -53,6 +53,35 @@ let heap = [];
 
   
 // }
+
+
+
+function vaild(s) {
+   
+  if(s.length%2 !==0) return false;
+
+  let dist = {
+    '(': ')', 
+    '{':'}', 
+    '[' : ']'
+  }
+
+  let a = [];
+  for (let index = 0; index < s.length; index++) {
+    if(s[index]=== '(' || s[index]=== '{'|| s[index]=== '['){
+      a.push(s[index])
+    }
+
+    else{
+      if(dist[a[a.length-1]] === s[index]){
+      }else{
+        return false
+      }
+    }
+  }
+
+  return a.length === 0
+}
 
 console.log(vaild("(}})"));
 

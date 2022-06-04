@@ -8,16 +8,17 @@ q1Tail = q1.length;
 q2Head = 0;
 q2Tail = q2.length;
 
-// stq1ck => desk
+// stack => desk cards
 let stack = [];
+
+// Init no card on the desk
 let top = -1;
 
 let flag;
 
 // if anyone has card, then start a round
 while (q1Head !== q1Tail && q2Head !== q2Tail) {
-  console.log('stack',stack);
-  console.log('top',top);
+
   // q1 deal
   let t = q1.shift();
   // if q1 win

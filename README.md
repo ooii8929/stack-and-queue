@@ -31,3 +31,5 @@ Big O is O(n)
 
 
 ## 
+
+Organize:https://slash-swing-a80.notion.site/Stacks-and-Queues-2d2784e0c6b441cba0855ba0dfbaeb21

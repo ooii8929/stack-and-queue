@@ -17,16 +17,16 @@ top++;
   
 }
 
-for(let i = mid+2 ; i <= a.length; i++){
+for(let i = mid + 2 ; i <= a.length; i++){
   if(a.charAt(i)!==stack[top-1]){
     break;
   }
   top--;
 }
 if(top == 0){
-  console.log('yes');
+  return true
 }else{
-  console.log('no');
+   return false
 }
 
 
